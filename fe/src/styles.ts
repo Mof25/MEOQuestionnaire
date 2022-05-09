@@ -10,8 +10,13 @@ export const MainContainer = styled.div`
     background-color:white;
     width:50%;
     padding: 12px 72px 12px 72px;
-    margin-top:70px;
+    margin:70px 0 70px 0;
     border-radius: 20px;
+
+    @media only screen and (max-width: 1200px) {
+         width:100%;
+    }
+
 `;
 
 
@@ -20,10 +25,11 @@ export const TitleContainer = styled.div`
     display:flex;
     flex-direction:column;
     width: 100%;
+    padding-top: 20px;
 `;
 
 export const Title = styled.h1`
-    font-size:20px;
+    font-size:35px;
 `;
 
 export const Hr = styled.hr`
@@ -36,7 +42,7 @@ export const Hr = styled.hr`
 `;
 
 export const Label = styled.h2`
-    font-size:16px;
+    font-size:24px;
     color: #000033;
 `;
 
@@ -53,6 +59,25 @@ export const InputContainer = styled.div`
         margin: 0;
     }
 
+    .ant-checkbox-wrapper{
+            margin:0 !important;
+        }
+
+        @media only screen and (max-width: 700px) {
+         width:100%;
+    }
+
+    @media only screen and (min-width:700px) and (max-width: 1200px) {
+         width:80%;
+    }
+
+`;
+
+export const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    width: 100%;
 `;
 
 
